@@ -19,7 +19,7 @@ app.get('/api/serieses', (req, res) => {
 })
 
 app.post('/api/serieses', (req, res) => {
-    let series = {
+    const series = {
         id: id++,
         name: req.body.name,
         characters: req.body.charList
@@ -29,7 +29,7 @@ app.post('/api/serieses', (req, res) => {
 })
 
 app.delete('/api/serieses/:id', (req, res) => {
-    let idParam = req.params.id;
+    const idParam = req.params.id;
     // const newSerieses = [];
     // for (const s of serieses) {
     //     if (s.id !== idParam) {
